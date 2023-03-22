@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaUserAlt, FaRegComment } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 import { api } from "../../lib/axios";
 
 import { Container, ImageUser, Content } from "./styles";
@@ -20,6 +22,12 @@ export function Post({ userId, id, title, body }: PostProps) {
   const [user, setUser] = useState<UserInfo>({ name: "", username: "" });
   const [countComments, setCountComments] = useState(0);
 
+  const navigate = useNavigate();
+
+  function handleShowPost() {
+    navigate(`/post/${id}`);
+  }
+
   useEffect(() => {
     async function fetchUser() {
       const response = await api.get(`/users/${userId}`);
@@ -36,7 +44,7 @@ export function Post({ userId, id, title, body }: PostProps) {
   }, []);
 
   return (
-    <Container>
+    <Container onClick={handleShowPost}>
       <ImageUser>
         <FaUserAlt />
       </ImageUser>
