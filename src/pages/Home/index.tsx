@@ -3,6 +3,7 @@ import { FiSearch } from "react-icons/fi";
 
 import { Header } from "../../components/Header";
 import { Loading } from "../../components/Loading";
+import { NewPostButton } from "../../components/NewPostButton";
 import { Post, PostProps } from "../../components/Post";
 
 import { api } from "../../lib/axios";
@@ -56,8 +57,9 @@ export function Home() {
               :
               <Loading />
           }
-
         </Posts>
+
+        <NewPostButton />
       </main>
     </Container>
   )

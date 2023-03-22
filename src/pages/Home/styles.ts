@@ -11,7 +11,7 @@ export const Container = styled.div`
   > main {
     height: 100%;
     grid-area: content;
-    padding: 1.3rem;
+    padding: 1.3rem 1.3rem 8rem;
 
     display: flex;
     align-items: center;
