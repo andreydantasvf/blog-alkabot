@@ -6,7 +6,7 @@ export const Container = styled.div`
   gap: 1.5rem;
   
   background: #FFF;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
   border-radius: .8rem;
 `;
 
