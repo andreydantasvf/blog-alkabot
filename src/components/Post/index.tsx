@@ -3,6 +3,7 @@ import { FaUserAlt, FaRegComment } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 import { api } from "../../lib/axios";
+import { Loading } from "../Loading";
 
 import { Container, ImageUser, Content } from "./styles";
 
@@ -19,7 +20,7 @@ export interface UserInfo {
 }
 
 export function Post({ userId, id, title, body }: PostProps) {
-  const [user, setUser] = useState<UserInfo>({ name: "", email: "" });
+  const [user, setUser] = useState<UserInfo | null>(null);
   const [countComments, setCountComments] = useState(0);
 
   const navigate = useNavigate();
@@ -45,24 +46,30 @@ export function Post({ userId, id, title, body }: PostProps) {
 
   return (
     <Container onClick={handleShowPost}>
-      <ImageUser>
-        <FaUserAlt />
-      </ImageUser>
+      {user ?
+        <>
+          <ImageUser>
+            <FaUserAlt />
+          </ImageUser>
 
-      <Content>
-        <div className="user">
-          <span className="name">{user.name}</span>
-          <span className="email">{user.email}</span>
-        </div>
+          <Content>
+            <div className="user">
+              <span className="name">{user?.name}</span>
+              <span className="email">{user?.email}</span>
+            </div>
 
-        <h2>{title}</h2>
-        <span>{body}</span>
+            <h2>{title}</h2>
+            <span>{body}</span>
 
-        <div className="comments">
-          <FaRegComment />
-          {countComments}
-        </div>
-      </Content>
+            <div className="comments">
+              <FaRegComment />
+              {countComments}
+            </div>
+          </Content>
+        </>
+        :
+        <Loading />
+      }
     </Container>
   )
 }

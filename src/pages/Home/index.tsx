@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FiSearch } from "react-icons/fi";
 
 import { Header } from "../../components/Header";
+import { Loading } from "../../components/Loading";
 import { Post, PostProps } from "../../components/Post";
 
 import { api } from "../../lib/axios";
@@ -9,7 +10,7 @@ import { api } from "../../lib/axios";
 import { Container, Input, Posts } from "./styles";
 
 export function Home() {
-  const [posts, setPosts] = useState<PostProps[]>([]);
+  const [posts, setPosts] = useState<PostProps[] | null>(null);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
@@ -53,7 +54,7 @@ export function Home() {
                 />
               ))
               :
-              <span>Nenhum post</span>
+              <Loading />
           }
 
         </Posts>
