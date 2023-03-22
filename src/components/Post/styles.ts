@@ -13,8 +13,8 @@ export const Container = styled.div`
 `;
 
 export const ImageUser = styled.div`
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 5.5rem;
+  height: 5rem;
 
   border-radius: 50%;
   background-color: #CCC;
@@ -27,7 +27,7 @@ export const ImageUser = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 21rem;
+  width: 100%;
   word-break: break-all;
 
   > .user {
