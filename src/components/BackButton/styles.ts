@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: fit-content;
   
   > a {
-    font-size: 1.6rem;
+    font-size: 2rem;
     
     display: flex;
     align-items: center;

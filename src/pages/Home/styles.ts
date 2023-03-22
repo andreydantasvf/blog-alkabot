@@ -16,6 +16,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+      padding: 1.3rem 20%;
+    }
   }
 `;
 

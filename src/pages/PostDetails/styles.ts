@@ -21,6 +21,10 @@ export const Container = styled.div`
       align-items: center;
       justify-content: center;
     }
+
+    @media (min-width: 768px) {
+      padding: 1.3rem 20%;
+    }
   }
 `;
 
