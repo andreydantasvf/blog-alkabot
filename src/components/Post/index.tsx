@@ -15,11 +15,11 @@ export interface PostProps {
 
 interface UserInfo {
   name: string,
-  username: string,
+  email: string,
 }
 
 export function Post({ userId, id, title, body }: PostProps) {
-  const [user, setUser] = useState<UserInfo>({ name: "", username: "" });
+  const [user, setUser] = useState<UserInfo>({ name: "", email: "" });
   const [countComments, setCountComments] = useState(0);
 
   const navigate = useNavigate();
@@ -52,7 +52,7 @@ export function Post({ userId, id, title, body }: PostProps) {
       <Content>
         <div className="user">
           <span className="name">{user.name}</span>
-          <span className="user-name">@{user.username}</span>
+          <span className="user-name">{user.email}</span>
         </div>
 
         <h2>{title}</h2>

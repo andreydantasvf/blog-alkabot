@@ -31,13 +31,15 @@ export const Content = styled.div`
   word-break: break-all;
 
   > .user {
+    display: flex;
+    flex-direction: column;
+
     .name {
       font-weight: 500;
       font-size: 1.8rem;
     }
 
     .user-name {
-      margin-left: 1rem;
       color: #71767b;
     }
   }
