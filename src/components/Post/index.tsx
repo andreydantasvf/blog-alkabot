@@ -13,7 +13,7 @@ export interface PostProps {
   body: string
 }
 
-interface UserInfo {
+export interface UserInfo {
   name: string,
   email: string,
 }
