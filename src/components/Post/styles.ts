@@ -39,7 +39,7 @@ export const Content = styled.div`
       font-size: 1.8rem;
     }
 
-    .user-name {
+    .email {
       color: #71767b;
     }
   }

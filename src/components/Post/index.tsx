@@ -52,7 +52,7 @@ export function Post({ userId, id, title, body }: PostProps) {
       <Content>
         <div className="user">
           <span className="name">{user.name}</span>
-          <span className="user-name">{user.email}</span>
+          <span className="email">{user.email}</span>
         </div>
 
         <h2>{title}</h2>
