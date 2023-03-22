@@ -4,10 +4,10 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   gap: 1.5rem;
-  
-  background: #FFF;
+
+  background: #fff;
   padding: 1rem 1rem 2rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 `;
 
 export const ImageUser = styled.div`
@@ -15,13 +15,13 @@ export const ImageUser = styled.div`
   height: 5rem;
 
   border-radius: 50%;
-  background-color: #CCC;
+  background-color: #ccc;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #FFF;
+  color: #fff;
 `;
 
 export const Content = styled.div`

@@ -13,7 +13,7 @@ export const Spinner = styled.div`
   border-top: 0.5rem solid black;
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
-  
+
   @keyframes spinner {
     0% {
       transform: rotate(0deg);

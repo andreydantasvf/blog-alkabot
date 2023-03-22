@@ -19,7 +19,7 @@ export function CommentPost({ name, email, body }: CommentProps) {
           <span className="name">{name}</span>
           <span className="email">{email}</span>
         </div>
-        
+
         <span>{body}</span>
       </Content>
     </Container>

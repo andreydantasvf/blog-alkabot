@@ -5,10 +5,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  
-  background: #FFF;
+
+  background: #fff;
   padding: 1rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 
   cursor: pointer;
 `;
@@ -18,13 +18,13 @@ export const ImageUser = styled.div`
   height: 5rem;
 
   border-radius: 50%;
-  background-color: #CCC;
+  background-color: #ccc;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #FFF;
+  color: #fff;
 `;
 
 export const Content = styled.div`
@@ -46,6 +46,7 @@ export const Content = styled.div`
   }
 
   > h2 {
+    font-family: "Roboto Slab", serif;
     margin: 1rem 0;
   }
 
@@ -53,6 +54,6 @@ export const Content = styled.div`
     margin-top: 1rem;
     display: flex;
     justify-content: end;
-    gap: .3rem;
+    gap: 0.3rem;
   }
 `;
