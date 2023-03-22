@@ -1,0 +1,55 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  
+  background: #FFF;
+  padding: 1rem;
+  border-radius: .8rem;
+
+  cursor: pointer;
+`;
+
+export const ImageUser = styled.div`
+  width: 4.8rem;
+  height: 4.8rem;
+
+  border-radius: 50%;
+  background-color: #CCC;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #FFF;
+`;
+
+export const Content = styled.div`
+  width: 21rem;
+  word-break: break-all;
+
+  > .user {
+    .name {
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
+
+    .user-name {
+      margin-left: 1rem;
+      color: #71767b;
+    }
+  }
+
+  > h2 {
+    margin: 1rem 0;
+  }
+
+  > .comments {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    gap: .3rem;
+  }
+`;
