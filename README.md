@@ -3,8 +3,8 @@
 
 ## 🔖Preview
 <p align="center" >
-<img alt="Layout" src=".github/previewWeb.png" widht="350px" height="350px">
-	  <img alt="Layout" src=".github/previewMobile.png" widht="250px" height="350px">
+<img alt="Layout" src=".github/previewWeb.png" widht="auto" height="350px">
+	  <img alt="Layout" src=".github/previewMobile.png" widht="auto" height="350px">
 	</p>
   
 ## 📜 Sobre
@@ -20,7 +20,7 @@ Simulação de um blog com seus posts e comentários de cada post.
 - React
 - Typescript
 - Styled Components
-- - React Icons
+- React Icons
 - Axios
 - React Router
 - ViteJs
