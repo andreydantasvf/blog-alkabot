@@ -14,10 +14,10 @@ export const Container = styled.button`
   align-items: center;
   gap: 0.5rem;
 
-  background: #469fbf;
-  color: #fff;
+  background: ${({theme}) => theme.colors.primary};
+  color: ${({theme}) => theme.colors.text_100};
 
   > svg path {
-    stroke: #fff;
+    stroke: ${({theme}) => theme.colors.text_100};
   }
 `;

@@ -9,8 +9,8 @@ export const Container = styled.div`
 export const Spinner = styled.div`
   width: 3rem;
   height: 3rem;
-  border: 0.5rem solid gray;
-  border-top: 0.5rem solid black;
+  border: 0.5rem solid ${({theme}) => theme.colors.gray};
+  border-top: 0.5rem solid ${({theme}) => theme.colors.black};
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
 

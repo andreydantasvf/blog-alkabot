@@ -34,7 +34,7 @@ export const Post = styled.div`
   gap: 1.5rem;
   margin-bottom: 2rem;
 
-  background: #fff;
+  background: ${({theme}) => theme.colors.text_100};
   padding: 1rem 1rem 2rem;
   border-radius: 0.8rem;
 `;
@@ -44,7 +44,7 @@ export const ImageUser = styled.div`
   height: 5rem;
 
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: ${({theme}) => theme.colors.gray};
 
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@ export const Content = styled.div`
     }
 
     .email {
-      color: #71767b;
+      color: ${({theme}) => theme.colors.text_300};
     }
   }
 

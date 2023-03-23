@@ -31,7 +31,7 @@ export const Input = styled.div`
   gap: 1rem;
 
   border-radius: 0.8rem;
-  border: 1px solid #747474;
+  border: 1px solid ${({theme}) => theme.colors.input_300};
   padding: 1.6rem;
 
   > input {
